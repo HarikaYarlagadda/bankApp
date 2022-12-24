@@ -1,0 +1,19 @@
+.example-container {
+    padding: 3rem;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+  .heading-bank{
+    text-align: center;
+    background-color: rgb(45, 45, 111);
+    color: white;
+  }
+  .container{
+    height: 30%;
+    width: 40%;
+    border-radius: 5ch;
+    background-color: pink;
+  }

@@ -1,0 +1,10 @@
+.tool-bar{
+    background-color: rgb(32, 32, 111);
+    color: white;
+    font-size: 20px;
+    justify-content: space-between;
+}
+a{
+   padding-right: 1rem;
+   color: white;
+}

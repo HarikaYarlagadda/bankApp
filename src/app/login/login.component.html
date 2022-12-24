@@ -1,0 +1,21 @@
+<html>
+    <h1 class="heading-bank">Welcome to Bank</h1>
+    <form #login="ngForm" (ngSubmit)="onSubmit(login)">
+    <div class="container" flex>
+    <div class="example-container">
+        <mat-form-field>
+          <input matInput placeholder="UserName" type="text" name="userName" 
+           class="form-control" ngModel [required]="true">
+        </mat-form-field>
+      
+        <mat-form-field>
+          <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" 
+          name="password" class="form-control" ngModel [required]="true">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="primary-btn"
+        type="submit">Login</button>
+      </div>
+    </div>
+    </form>
+</html>
