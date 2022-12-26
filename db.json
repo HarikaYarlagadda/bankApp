@@ -1,9 +1,58 @@
-{"login":[
-  {
-    "username":"harika",
-    "password":"harika"
-  }
-],
+{
+  "login": [
+    {
+      "id": 1,
+      "userName": "harika",
+      "password": "harika"
+    },
+    {
+      "id": 2,
+      "userName": "harish",
+      "password": "1234"
+    },
+    {
+      "id": 3
+    },
+    {
+      "userName": "siri",
+      "password": "siri",
+      "id": 4
+    }
+  ],
+  "status": [
+    {
+      "id": 1,
+      "name": "Harika",
+      "applications": "12",
+      "rejected": "5",
+      "accepted": "4",
+      "hold": "2"
+    },
+    {
+      "id": 2,
+      "name": "Harish",
+      "applications": "80",
+      "rejected": "6",
+      "accepted": "33",
+      "hold": "20"
+    },
+    {
+      "id": 3,
+      "name": "Rajesh",
+      "applications": "6",
+      "rejected": "3",
+      "accepted": "2",
+      "hold": "1"
+    },
+    {
+      "applications": "ag",
+      "rejected": "aaa",
+      "accepted": "aaa",
+      "hold": "aaa",
+      "name": "haag",
+      "id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,

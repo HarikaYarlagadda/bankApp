@@ -1,0 +1,17 @@
+.example-card{
+    height: 20%;
+    width: 15%;
+    background-color: violet;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.container{
+    flex-direction: row;
+    display: flex;
+}
+.add-card{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}

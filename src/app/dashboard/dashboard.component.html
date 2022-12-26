@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<div class="container" flex>
+<mat-card class="example-card" *ngFor="let obj of status; index as i" #mycard>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{obj.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+       Applications-{{obj.applications}}<br>
+       Rejected-{{obj.rejected}}<br>
+       Accepted-{{obj.accepted}}<br>
+       Hold-{{obj.hold}}<br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="editData(obj.id)">Edit</button>
+    </mat-card-actions>
+  </mat-card>
+  </div>
+
+<br>
+<form [formGroup]="statusData"  (ngSubmit)="submit(statusData)">
+<div class="add-card">
+  <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" type="text" name="name" class="form-control" 
+    [required]="true" formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Applications</mat-label>
+    <input matInput placeholder="applications" type="text" name="applications" class="form-control" 
+    [required]="true" formControlName="applications" >
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Rejected</mat-label>
+    <input matInput placeholder="Rejected" type="text" name="rejected" class="form-control" 
+    [required]="true" formControlName="rejected" >
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Accepted</mat-label>
+    <input matInput placeholder="Accepted" type="text" name="accepted" class="form-control" 
+    [required]="true" formControlName="accepted" >
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Hold</mat-label>
+    <input matInput placeholder="Hold" type="text" name="hold" class="form-control" 
+    [required]="true" formControlName="hold" >
+  </mat-form-field>
+  <button mat-raised-button color="primary" class="primary-btn">ADD</button>
+</div>
+  
+</form>
