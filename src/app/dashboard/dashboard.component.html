@@ -12,7 +12,8 @@
        Hold-{{obj.hold}}<br>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" (click)="editData(obj.id)">Edit</button>
+      <button mat-raised-button color="primary" (click)="editData(obj)">Edit</button>
+      <button mat-raised-button color="primary" (click)="delete(obj)">Delete</button>
     </mat-card-actions>
   </mat-card>
   </div>
@@ -28,7 +29,7 @@
   <mat-form-field appearance="outline">
     <mat-label>Applications</mat-label>
     <input matInput placeholder="applications" type="text" name="applications" class="form-control" 
-    [required]="true" formControlName="applications" >
+    [required]="true" formControlName="applications">
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Rejected</mat-label>
@@ -45,7 +46,8 @@
     <input matInput placeholder="Hold" type="text" name="hold" class="form-control" 
     [required]="true" formControlName="hold" >
   </mat-form-field>
-  <button mat-raised-button color="primary" class="primary-btn">ADD</button>
+  <button *ngIf="buttonMode" mat-raised-button color="primary"  class="primary-btn">Update</button>
+  <button *ngIf="!buttonMode" mat-raised-button color="primary" class="primary-btn">Add</button>
 </div>
   
 </form>

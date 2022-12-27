@@ -29,28 +29,28 @@
       "hold": "2"
     },
     {
-      "id": 2,
-      "name": "Harish",
-      "applications": "80",
-      "rejected": "6",
+      "applications": "2",
+      "rejected": "62",
       "accepted": "33",
-      "hold": "20"
+      "hold": "20",
+      "name": "Harish",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Rajesh",
-      "applications": "6",
-      "rejected": "3",
+      "applications": "12",
+      "rejected": "22",
       "accepted": "2",
-      "hold": "1"
+      "hold": "2",
+      "name": "sister",
+      "id": 6
     },
     {
-      "applications": "ag",
-      "rejected": "aaa",
-      "accepted": "aaa",
-      "hold": "aaa",
-      "name": "haag",
-      "id": 4
+      "applications": "22",
+      "rejected": "3",
+      "accepted": "4",
+      "hold": "5",
+      "name": "monkey",
+      "id": 7
     }
   ],
   "posts": [
