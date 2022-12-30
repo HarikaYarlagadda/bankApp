@@ -21,14 +21,6 @@
   ],
   "status": [
     {
-      "id": 1,
-      "name": "Harika",
-      "applications": "12",
-      "rejected": "5",
-      "accepted": "4",
-      "hold": "2"
-    },
-    {
       "applications": "2",
       "rejected": "62",
       "accepted": "33",
@@ -51,6 +43,14 @@
       "hold": "5",
       "name": "monkey",
       "id": 7
+    },
+    {
+      "applications": "323",
+      "rejected": "23",
+      "accepted": "2",
+      "hold": "32",
+      "name": "harika",
+      "id": 8
     }
   ],
   "posts": [

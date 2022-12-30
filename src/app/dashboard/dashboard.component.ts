@@ -37,6 +37,12 @@ public status: any ;
   }
   submit(data: any){
     if(!this.buttonMode){
+      if(data.value.accepted == "" || data.value.applications == "" ||
+      data.value.hold == "" || data.value.rejected == "" || 
+      data.value.name == ""){
+
+      }
+      else{
   console.log('submitted',data.value);
   this.dashboardService.addStatus(data.value)
   .subscribe((res:any)=>{
@@ -44,6 +50,7 @@ public status: any ;
     console.log("add",res);
     window.location.reload();
   })
+}
 }
 else{
   this.dashboardService.updateStatus(this.currentId.id , data)
