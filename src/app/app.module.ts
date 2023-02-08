@@ -19,13 +19,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatCardModule} from '@angular/material/card';
 import { CommonModule } from '@angular/common';
 import {MatDialogModule} from '@angular/material/dialog';
+import { PipesexPipe } from './pipes/pipesex.pipe';
+import { DetailsComponent } from './details/details.component';
+import { JavascriptComponent } from './javascript/javascript.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    PipesexPipe,
+    DetailsComponent,
+    JavascriptComponent
   ],
   imports: [
     BrowserModule,

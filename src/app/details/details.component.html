@@ -1,0 +1,24 @@
+<h1>Parent Component</h1>
+<div>
+    Date: {{todayDate}} <br>
+    DateUpper: {{todayDate |date| uppercase}}<br>
+    DateLower: {{todayDate |date: 'medium'}}<br>
+    number: {{location | number}}<br>
+    currency: {{100 | currency:'INR'}}<br>
+    currency2: {{100 | currency:'KRW'}} <br>
+    currency3: {{100 | currency:'USD'}} <br>
+    user data: {{user | json | lowercase}}<br>
+    title case:{{text | titlecase}}<br>
+    slicetext:{{text1 | slice : 2 }}<br>
+    decimal ex: {{023.33200 | number:'2.3'}}<br>
+    decimal ex2: {{3.3 | number:'1.0-0'}}<br>
+    percent: {{0.78 | percent }}
+</div>
+<h2>{{outputex}}</h2>
+<form #dataform="ngForm" (ngSubmit)="add(dataform)">
+<label>Name</label>
+<input name="namedata" ngModel>
+<button mat-raised-button color="primary"  class="primary-btn">Update</button>
+</form>
+<app-home [dateinput]="todayDate" #home (notify)="parentMethod($event)"></app-home>
+<app-home [dateinput]="location" #home (notify)="parentMethod($event)"></app-home>

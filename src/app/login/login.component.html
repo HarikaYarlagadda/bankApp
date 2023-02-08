@@ -5,16 +5,18 @@
     <div class="example-container">
       <mat-form-field appearance="outline">
         <mat-label>Username</mat-label>
-        <input matInput placeholder="UserName" type="text" name="userName" class="form-control" [required]="true"
+        <input matInput placeholder="UserName" type="text" class="form-control" [required]="true"
           formControlName="userName">
       </mat-form-field>
-
+      <span *ngIf="uservalid && uservalid.invalid && uservalid.touched" class="errormsg">Please enter Valid name</span>
+      <br>
       <mat-form-field appearance="outline">
         <mat-label>Password</mat-label>
         <input matInput placeholder="password" [type]="hide ? 'password' : 'text'" name="password" class="form-control"
           [required]="true" formControlName="password">
         <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </mat-form-field>
+      <span *ngIf="passvalid && passvalid.invalid && passvalid.touched" class="errormsg">Please enter Valid Password</span>
       <button mat-raised-button color="primary" class="primary-btn" type="submit">Login</button>
       <button mat-raised-button color="basic" class="primary-btn" (click)="onClear()" type="button">Clear</button>
     </div>

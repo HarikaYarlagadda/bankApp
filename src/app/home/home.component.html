@@ -1,1 +1,8 @@
-<app-navbar></app-navbar>
+ <h1>Child component</h1>
+ <h3>Todays Date is {{dateinput}}</h3>
+<h3 #addcolor>my name is {{fname}}</h3>
+<h4 #addcolor>Hi testing viewchild1</h4>
+<h4 #addcolor>Hi testing viewchild2</h4>
+<!-- example for @output - passing data from child to parent -->
+<button (click)="passData()">add text to parent</button>
+<h2>Welcome {{lname}}</h2>

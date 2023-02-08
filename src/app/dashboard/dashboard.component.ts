@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Subscriber } from 'rxjs';
@@ -83,3 +83,4 @@ this.dashboardService.deleteStatus(data.id).subscribe((res:any) =>{
 })
   }
 }
+
